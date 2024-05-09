@@ -1,0 +1,481 @@
+body {
+    background-color: #f8f8f8;
+    color: #f8f8f8;
+    font-family: "Roboto+Mono", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+}
+
+header {
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+section p {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: #999999;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+b {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 24px;
+    letter-spacing: 6px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    padding: 15px 0px;
+}
+
+h3 {
+    font: 20px;
+    padding: 15px 0px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    background-color: rgba(87, 87, 87, 0.6);
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    padding: 0px;
+    right: 0px;
+    top: 60px;
+    width: 50%;
+}
+
+nav li {
+    padding: 14px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #f8f8f8;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+nav li:hover {
+    background-color: rgba(36, 36, 36, 0.3);
+}
+
+nav a:hover {
+    color: #999999;
+}
+
+fieldset {
+    background-color: #e4e4e4;
+    border: none;
+    padding: 60px 30px;
+}
+
+fieldset label {
+    color: #646464;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    border: 1px solid #999999;
+    height: 26px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #646464;
+    border: none;
+    border-radius: 5px;
+    color: #f8f8f8;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+textarea {
+    border: 1px solid #b1b1b1;
+    font-size: 14px;
+    height: 100px;
+    width: 100%;
+}
+
+footer {
+    height: 100px;
+    padding: 25px;
+}
+
+/************************************************
+                       id 
+ ************************************************/
+
+#hamberger-icon {
+    background: url(../images/hambg-icon-48x48.png);
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+}
+
+/************************************************
+                   grid classes 
+ ************************************************/
+ .contact-column{
+    width: 80%;
+ }
+
+.contact-column,
+.small-colums {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+.small-colums {
+    gap: 60px 0px;
+}
+
+.contact-column {
+    gap: 20px 0px;
+}
+
+.shop-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.about-one-img {
+    grid-area: aboutoneimg;
+}
+.about-one-txt {
+    grid-area: aboutonetxt;
+}
+.about-two-img {
+    grid-area: abouttwoimg;
+}
+.about-two-txt {
+    grid-area: abouttwotxt;
+}
+
+.about-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "aboutoneimg"
+        "aboutonetxt"
+        "abouttwoimg"
+        "abouttwotxt";
+    margin: 50px auto;
+    width: 90%;
+}
+
+/************************************************
+                   classes 
+ ************************************************/
+
+.nav-wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-wrap {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.content-wrap {
+    margin: 0 auto;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.content-shop-wrap {
+    margin: 0 auto;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.content-wrap-txt {
+    margin: 0 auto;
+    padding: 0px 25px 40px 25px;
+    text-align: center;
+}
+
+.content-img {
+    width: 90%;
+}
+
+.contact-img {
+    width: 100%;
+}
+
+.contact-img-h {
+    height: 165px;
+    width: 100%;
+}
+
+.logo {
+    width: 120px;
+}
+
+.background-grey {
+    background-color: #999999;
+}
+
+.color-white {
+    color: #f5f5f5;
+}
+
+.btn-container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/************************************************
+                    media query 
+ ************************************************/
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        background: transparent;
+        display: block;
+        right: 30px;
+        width: auto;
+        padding-right: 50px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 0px 20px;
+        text-align: center;
+        /* font-weight: 500; */
+    }
+
+    nav a {
+        color: #999999;
+        font-size: 18px;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    nav li:hover {
+        background: transparent;
+        font-weight: 500;
+    }
+
+    nav a:hover {
+        color: #b1b1b1;
+    }
+
+    fieldset label {
+        font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        font-size: 16px;
+        height: 28px;
+        width: 90%;
+    }
+
+    input[type="submit"] {
+        font-size: 18px;
+    }
+
+    textarea {
+        font-family: "Roboto+Mono", sans-serif;
+        border: 1px solid #b1b1b1;
+        font-size: 16px;
+        height: 100px;
+        width: 90%;
+    }
+
+    #hamberger-icon {
+        display: none;
+    }
+
+    .small-colums {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 0px;
+    }
+
+    .contact-column {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 0px;
+    }
+
+    .about-column {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "aboutoneimg aboutonetxt"
+            "abouttwotxt abouttwoimg";
+    }
+
+    .about-one-txt,
+    .about-two-txt {
+        margin: auto;
+    }
+
+    .txt-right {
+        text-align: right;
+    }
+    .txt-left {
+        text-align: left;
+    }
+
+    .shop-column {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px 25px;
+    }
+
+    .content-wrap-txt {
+        padding: 0px;
+    }
+
+    .content-shop-wrap {
+        margin: 0 auto;
+        padding: 20px 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    b {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 18px;
+    }
+
+    nav li {
+        padding: 0px 25px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+    .small-colums {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .content-wrap {
+        padding: 80px 80px;
+    }
+
+    .content-img {
+        width: 90%;
+    }
+
+    .content-shop-wrap {
+        padding: 50px 0px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    b {
+        font-size: 32px;
+    }
+
+    section p {
+        font-size: 20px;
+    }
+
+    nav ul {
+        padding-right: 100px;
+    }
+    nav li {
+        padding: 0px 35px;
+    }
+
+    fieldset label {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        font-size: 18px;
+
+        height: 28px;
+        width: 95%;
+    }
+
+    input[type="submit"] {
+        font-size: 20px;
+    }
+
+    textarea {
+        width: 95%;
+    }
+
+    .shop-column {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px 0px;
+    }
+}
